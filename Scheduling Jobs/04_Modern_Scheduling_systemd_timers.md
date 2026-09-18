@@ -1,5 +1,19 @@
 # Modern Scheduling: `systemd` Timers
 
+## Index
+
+1. [Why Are We Moving Beyond `cron`?](#why-are-we-moving-beyond-cron)
+2. [The Core Concept: Two Files Working Together](#the-core-concept-two-files-working-together)
+3. [Step-by-Step: Creating Your First Timer](#step-by-step-creating-your-first-timer)
+4. [Understanding `OnCalendar` Syntax](#understanding-oncalendar-syntax)
+5. [Other Timer Types (Not Just Calendar-Based)](#other-timer-types-not-just-calendar-based)
+6. [Managing `systemd` Timers](#managing-systemd-timers)
+7. [`cron` vs `systemd` Timers: The Comparison](#cron-vs-systemd-timers-the-comparison)
+8. [Quick Reference Summary](#quick-reference-summary)
+9. [What's Next?](#whats-next)
+
+---
+
 ## Why Are We Moving Beyond `cron`?
 
 `cron` has been around since the 1970s. It works, and it works well. But it has some limitations:

@@ -1,5 +1,30 @@
 # Job Interview Preparation: Linux Scheduling
 
+## Index
+
+1. [How to Use This Guide](#how-to-use-this-guide)
+2. [Basic Questions (Entry-Level / Junior Sysadmin)](#basic-questions-entry-level--junior-sysadmin)
+   - [Q1: What is job scheduling in Linux?](#q1-what-is-job-scheduling-in-linux)
+   - [Q2: What is the difference between `at` and `cron`?](#q2-what-is-the-difference-between-at-and-cron)
+   - [Q3: Explain the five fields in a crontab entry](#q3-explain-the-five-fields-in-a-crontab-entry)
+   - [Q4: How do you list, edit, and remove a user's crontab?](#q4-how-do-you-list-edit-and-remove-a-users-crontab)
+   - [Q5: What is a daemon?](#q5-what-is-a-daemon-name-the-daemons-related-to-job-scheduling)
+3. [Intermediate Questions (Mid-Level Sysadmin / DevOps)](#intermediate-questions-mid-level-sysadmin--devops)
+   - [Q6: What is `anacron` and how does it differ from `cron`?](#q6-what-is-anacron-and-how-does-it-differ-from-cron)
+   - [Q7: Troubleshooting a cron job](#q7-your-cron-job-works-when-you-run-it-manually-but-fails-when-cron-runs-it-how-do-you-troubleshoot)
+   - [Q8: User crontab vs system crontab](#q8-what-is-the-difference-between-a-user-crontab-and-the-system-crontab-etccrontab)
+   - [Q9: Preventing overlapping cron jobs](#q9-how-do-you-prevent-two-instances-of-the-same-cron-job-from-overlapping)
+   - [Q10: Restricting cron and at access](#q10-how-do-you-restrict-which-users-can-use-cron-and-at)
+4. [Advanced Questions (Senior Sysadmin / DevOps / SRE)](#advanced-questions-senior-sysadmin--devops--sre)
+   - [Q11: `systemd` timers vs `cron`](#q11-explain-systemd-timers-why-would-you-use-them-instead-of-cron)
+   - [Q12: Writing complex cron schedules](#q12-write-a-cron-job-that-runs-every-weekday-at-830-am-and-every-saturday-at-noon)
+   - [Q13: Scheduling in containers](#q13-how-would-you-schedule-a-job-in-a-containerized-dockerkubernetes-environment)
+   - [Q14: Incident response for failed cron jobs](#q14-a-critical-cron-job-that-runs-nightly-didnt-execute-last-night-walk-me-through-your-incident-response)
+   - [Q15: The `@reboot` directive](#q15-explain-the-reboot-directive-in-cron-when-would-you-use-it-and-when-would-you-avoid-it)
+5. [Tips for Interview Success](#tips-for-interview-success)
+
+---
+
 ## How to Use This Guide
 
 These are the most commonly asked interview questions about Linux job scheduling, organized by difficulty. For each question, we provide:

@@ -1,5 +1,23 @@
 # Troubleshooting Scheduled Jobs
 
+## Index
+
+1. [Why Do Scheduled Jobs Fail?](#why-do-scheduled-jobs-fail)
+2. [Pitfall #1: The PATH Problem (Most Common!)](#pitfall-1-the-path-problem-most-common)
+3. [Pitfall #2: The Environment Problem](#pitfall-2-the-environment-problem)
+4. [Pitfall #3: Permission Issues](#pitfall-3-permission-issues)
+5. [Pitfall #4: Forgetting to Redirect Output](#pitfall-4-forgetting-to-redirect-output)
+6. [Pitfall #5: Incorrect Crontab Syntax](#pitfall-5-incorrect-crontab-syntax)
+7. [Pitfall #6: The Script Works Manually but Not in Cron](#pitfall-6-the-script-works-manually-but-not-in-cron)
+8. [Where to Check the Logs](#where-to-check-the-logs)
+9. [Pitfall #7: The Overlap Problem](#pitfall-7-the-overlap-problem)
+10. [Pitfall #8: Working Directory Confusion](#pitfall-8-working-directory-confusion)
+11. [The Ultimate Debugging Template](#the-ultimate-debugging-template)
+12. [Quick Reference: Troubleshooting Checklist](#quick-reference-troubleshooting-checklist)
+13. [What's Next?](#whats-next)
+
+---
+
 ## Why Do Scheduled Jobs Fail?
 
 You've written the perfect cron job. The syntax is correct. You tested the script manually and it works. Then you schedule it, go to bed... and wake up to find it never ran, or it ran but produced errors.
